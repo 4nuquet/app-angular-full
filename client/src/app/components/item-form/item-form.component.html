@@ -1,0 +1,17 @@
+<div class="container">
+    <form (ngSubmit)="submitItem()">
+        <h6>Add new item</h6>
+        <div class="form-group">
+            <input type="text" class="form-control" placeholder="name" [(ngModel)]="item.name" name="name" />
+        </div>
+        <div class="form-group">
+            <input type="text" class="form-control" placeholder="info" [(ngModel)]="item.info" name="info" />
+        </div>
+        <div class="form-group">
+            <input type="text" class="form-control" placeholder="code" [(ngModel)]="item.code" name="code" />
+        </div>
+        <div class="float-right">
+            <button type="submit" class="btn btn-primary">Add Item</button>
+        </div>
+    </form>
+</div>

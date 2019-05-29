@@ -12,6 +12,14 @@ router.get('/', async(req, res) => {
 
 })
 
+router.get('/:id', async(req, res) => {
+
+    await connect();
+    const items = await Items.findById(req.params.id);
+    res.json(items);
+
+})
+
 router.post('/', async(req, res) => {
 
     await connect();
