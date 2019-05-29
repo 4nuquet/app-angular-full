@@ -21,4 +21,4 @@ app.use('/items', itemRoutes);
 //Start the serve
 app.listen(app.get('port'), () => {
     console.log('Server on Port', app.get('port'));
-})
+});
